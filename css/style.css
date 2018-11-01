@@ -1,21 +1,80 @@
-.header{
-  width: 100%;
+@charset "UTF-8"
+
+html {
+  font-size: 62.5%;
 }
 
-.wrapper{
+body {
+  color: #333;
+  font-size: 1.2rem;
+  font-family: "Hiragana Kaku Gothic PronN", Meiryo, sans-serif;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  padding: 28px 0 10px;
+  background: url('../images/bg-header.gif') repeat-x;
+  box-shadow: 0 0 10px 1px #e3e3e3;
+}
+
+.wrapper {
   width: 970px;
   margin: 30px auto 40px;
 }
 
-.main{
+.main {
   display: block;
   float: left;
   width: 660px;
 }
-.sidmenu{
+.sidemenu {
   float: right;
   width: 275px;
 }
-.footer{
+.footer {
   width: 100;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header, .main, .sidemenu, .footer {
+  border: 1px solid #aaa;
+  background-color: #ccc
+}
+
+.header, footer {
+  height: 100px;
+}
+
+.main, .sidemenu {
+  height: 500px;
+}
+
+.logo {
+  width: 225px;
+  height: 56px;
+  margin: 0 auto;
+  background: url('../images/logo.png') no-repeat;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.logo a{
+  display: block;
+  width: 100%;
+  height: 100%;
 }
